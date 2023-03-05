@@ -9,5 +9,5 @@ public interface StudentServices {
     Long create(StudentDto dto);
     boolean update(StudentDto dto);
     boolean delete(Long id);
-    List<StudentEntity> readAll();
+    List<StudentDto> readAll();
 }

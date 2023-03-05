@@ -22,5 +22,4 @@ public class StudentMappers {
     List<StudentDto> convertToDto(List<StudentEntity> l) {
         return null;
     }
-
 }
