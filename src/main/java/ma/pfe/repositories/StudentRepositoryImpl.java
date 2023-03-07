@@ -1,11 +1,11 @@
 package ma.pfe.repositories;
 
-import javassist.bytecode.stackmap.TypeData;
 import ma.pfe.entities.StudentEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -14,13 +14,13 @@ public class StudentRepositoryImpl implements StudentRepository{
     private final static Logger LOG =  LoggerFactory.getLogger(StudentRepositoryImpl.class);
 
     @Override
-    public Long create(StudentEntity e) {
-        return null;
+    public StudentEntity create(StudentEntity e) {
+        return new StudentEntity();
     }
 
     @Override
-    public boolean update(StudentEntity e) {
-        return false;
+    public StudentEntity update(StudentEntity e) {
+        return new StudentEntity();
     }
 
     @Override
@@ -30,7 +30,7 @@ public class StudentRepositoryImpl implements StudentRepository{
 
     @Override
     public List<StudentEntity> readAll() {
-        return null;
+        return new ArrayList<>();
     }
 
 

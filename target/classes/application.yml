@@ -6,3 +6,4 @@ Spring:
 Loggin:
   level:
     org: DEBUG
+    org.springframework.web: DEBUG
